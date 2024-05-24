@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styke.css"> 
+    <title>Personal Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!----hero selection---->
+<header>
+    <div class="hero">
+        <nav>
+            <h2 class="btn">Portfolio<span>Website</span></h2>
+            <ul>
+                <li><b><a class="button" href="#">Home</a></li></b>
+                <li><b><a class="button" href="#About">About Me</a></li></b>
+                <li><b><a class="button" href="#gallery">Gallery</a></li></b>
+                <li><b><a class="button" href="#service">Service</a></li></b>
+                <li><b><a class="button" href="#contact-me">Contact Me</a></li></b>
+            </ul>
+            <a href="https://www.instagram.com/ezekiyah/" class="btn">Follow Me</a>
+        </nav>
+        </header>
+        <div class="container">
+            <h4>Hello, I am </h4>
+            <h1>Ezekiela Iyah <span>Gomez</span></h1>
+            <h3>I am a GRC Student.</h3>
+
+            </div>
+        </div>
+    </div>
+    <!----About Section Start---->
+    <section class="About" id="About">
+        <div class="main">
+            <img src="img.jpg">
+            <div class="About-text">
+                <h2>About Me</h2>
+                <h5>A Student <span>& Programmer</span></h5>
+                <p>Im grc student. Who wants to finish school to lift my family out of poverty. To make up for all their sacrifices to me and help my relatives</p>
+                <button type="button">Let's Talk</button>
+            </div>
+        </div>
+    </section>
+    <!--Gallery-->
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    
+    <div class="gallery" id="gallery">
+        <div class="gallery-item">
+            <img src="img1.jpg" alt="Image 1" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="img2.jpg" alt="Image 2" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="img3.jpg" alt="Image 3" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="img4.jpg" alt="Image 4" onclick="openModal(this)">
+        </div>
+            <div class="gallery-item">
+                <img src="img5.jpg" alt="Image 5" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="img6.jpg" alt="Image 2" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="img7.jpg" alt="Image 3" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="img8.jpg" alt="Image 4" onclick="openModal(this)">
+            </div>
+                <div class="gallery-item">
+                    <img src="img9.jpg" alt="Image 1" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img10.jpg" alt="Image 2" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img11.jpg" alt="Image 3" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img12.jpg" alt="Image 4" onclick="openModal(this)">
+                </div>
+        <!-- Add more images as needed -->
+    </div>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+    
+    <script>
+        function openModal(element) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = element.src;
+        }
+    
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+    
+
+    <!---service section start-->
+    <div class="service" id="service">
+        <div class="tittle">
+            <h2>My Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals: firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user"></i>
+                <h5>Software Developer</h5>
+                <div class="pra">
+                    <p>"Talk is cheap. Show me the code." - Linus Torvalds</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-regular fa-bell"></i>
+                <h5>Photographer</h5>
+                <div class="pra">
+                    <p>"Photography is the story I fail to put into words." - Destin Sparks</p>
+
+                        <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+       
+
+
+        <!----footer start---->
+        <footer>
+            <p><span>Ezekiela</span>Iyah Gomez</p>
+            <p>For more question - please don't hesitate to reach out of me:</p>
+            <div class="social">
+                <a href="https://www.facebook.com/EzekielaIyah03"></a><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i>
+                <a href="https://www.instagram.com/ezekiyah/"></a><i class="fa-brands fa-square-instagram" style="color: #fb3504;"></i>
+                <a href="#"></a><i class="fa-brands fa-square-dribbble" style="color: #B197FC;"></i>
+            </div> 
+            <p class="end" style="color: #ffffff;">Copyright By Ezekiela Iyah Gomez</p>
+        </footer>
+
+        
+
+</body>
+</html>
